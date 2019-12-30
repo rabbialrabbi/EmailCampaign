@@ -19,7 +19,8 @@
             <div class="col-2">Time</div>
             <div class="col-3">
                 <select name="time" id="">
-                    <option value="1">After 1 minute</option>
+                    <option value="0" default>Now</option>
+                    <option value="1">After 1 Day</option>
                 </select>
             </div>
         </div>

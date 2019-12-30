@@ -24,9 +24,9 @@ class MailController extends Controller
            'msg'=>'required'
         ]);
 
+        $data = ['group'=>request()->group, 'time'=>request()->time,'msg'=>request()->msg];
 
-
-        event(new CampaignMailHasSent(request()));
+        event(new CampaignMailHasSent($data));
 
         return back()->with('report','Mail sent successful');
     }

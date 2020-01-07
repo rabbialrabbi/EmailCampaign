@@ -10,19 +10,19 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class CampaignMailHasSent
+class TestEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
-
     public $data;
 
     /**
      * Create a new event instance.
      *
-     * @param $data
+     * @return void
      */
     public function __construct($data)
     {
+        //
         $this->data = $data;
     }
 

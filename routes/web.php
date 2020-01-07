@@ -14,10 +14,13 @@
 use Carbon\Carbon;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/age');
 });
 
-Route::get('/email','MailController@show');
-Route::post('/email','MailController@send');
+Route::get('/age', 'AgeController@index');
+Route::post('/age', 'AgeController@show');
+
+Route::get('/email','MailController@index');
+Route::post('/email','MailController@store');
 
 

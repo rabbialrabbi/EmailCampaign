@@ -1,0 +1,12 @@
+1. gate
+2. Query log
+3. Type of dependency injection
+4. softdelete
+5. Middleware
+6. Implicit controller
+7. Policies
+8. Laravel dusk
+9. API.PHP route
+10. pagination
+11. Upload file
+12. work with file

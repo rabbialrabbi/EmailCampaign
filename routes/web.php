@@ -24,3 +24,4 @@ Route::get('/email','MailController@index');
 Route::post('/email','MailController@store');
 
 
+Route::get('/farmar','FarmarController@index');

@@ -19,7 +19,7 @@ class MailController extends Controller
         $data = email::latest()->first();
 
         return view('email.list',[
-            'email' => $data->email
+            'email' => $data
         ]);
 
     }

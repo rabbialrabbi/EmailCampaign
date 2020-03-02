@@ -3,7 +3,7 @@
 @section('body')
 
     @if(@$email)
-    <p>{{$email}}</p>
+    <p>{{$email->email}}</p>
     @endif
     <form action='/email' method="POST" >
         @csrf
